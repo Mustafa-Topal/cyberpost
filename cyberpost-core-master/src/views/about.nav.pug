@@ -1,0 +1,15 @@
+body.blue-grey.lighten-3
+    nav.nav-wrapper.blue-grey.darken-4
+        .nav-wrapper
+            a.brand-logo(href='/dashboard')
+                img.cyberpost-logo(src="../public/img/coyberpost-modern-logo-optimized.svg", alt="")
+            a.dropdown-trigger.btn.right.hide-on-large-only.nav-dropdown(data-target='dropdown1') 
+                i.material-icons.dropdown-icon arrow_drop_down
+            ul.right.hide-on-med-and-down
+                li
+                    a.hide-logout-button(href='/dashboard') Dashboard
+            // Dropdown Structure
+            ul#dropdown1.dropdown-content.blue-grey.darken-3
+                li
+                    a.dashboard-button(href='/dashboard') Dashboard
+                li.divider(tabindex='-1').blue-grey.darken-1    

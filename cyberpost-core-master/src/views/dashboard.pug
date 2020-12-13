@@ -1,0 +1,113 @@
+.container.dashboard-container
+    .col
+        .card
+            .card-panel.z-depth-3.blue-grey.darken-3.card-panel-dashboard
+                h5.body.dashboard DASHBOARD
+                form#send-form(action='/api/send/', method='post')
+                    .card.col.blue-grey.darken-3.z-depth-1.token
+                        b.token-title TOKEN
+                        a#token_text #{user.api_key}
+                    .row.from-row
+                        .input-field.col.s4.from-name-input-field
+                            i.material-icons.prefix face
+                            input#from_name.validate.from-name-input(
+                                placeholder=' Name', 
+                                type='text', 
+                                name='from_name'
+                            )
+                            label.from-name-label(for='name') From Name        
+                        .input-field.col.s8.from-input-field
+                            i.material-icons.prefix email
+                            input#from.validate.from-input(
+                                placeholder=' Email', 
+                                type='email', 
+                                name='from'
+                            )
+                            label(for='from') From Email
+                    .row.to-row
+                        .input-field.col.s4.to-name-input-field
+                            i.material-icons.prefix face
+                            input#to_name.validate.to-name-input(
+                                placeholder=' Name', 
+                                type='text', 
+                                name='to_name'
+                            )
+                            label.to-name-label(for='name') To Name 
+                        .input-field.col.s8.to-input-field
+                            i.material-icons.prefix email
+                            input#to.validate.to-input(
+                                type='hidden',
+                                name='to'
+                            )
+                            label.to-label(for='to') To Email    
+                            .chips.to-chips    
+                    .row       
+                        .input-field.col.s12 
+                            i.material-icons.prefix email
+                            input#bcc(
+                                type='hidden',
+                                name='bcc'
+                            )
+                            label.bcc-label(for='bcc') Bcc Email
+                            .chips.bcc-chips
+                    .row
+                        .input-field.col.s12
+                            i.material-icons.prefix short_text
+                            input#subject.validate(
+                                placeholder=' I\'m a subject',
+                                type='text',
+                                name='subject'
+                            )
+                            label(for='subject') Subject
+                    .row
+                        .input-field.col.s11
+                            i.material-icons.prefix mode_edit
+                            textarea.html-and-text-message#text_message.materialize-textarea(
+                                name='text'
+                            )
+                            label(for='html-and-text-message') Message
+
+                        label.html-label
+                            input.html-check.filled-in(type='checkbox')
+                            span.html-span HTML FORMAT
+                    .row
+                        .col.s12
+                            button.waves-effect.waves-light.btn-large.z-depth-3.blue-grey.darken-1.send-submit-button(
+                                type='submit', 
+                                name='action'
+                                ) S E N D
+                |
+                .card-panel.z-depth-3.blue-grey.darken-1
+                    .colum.provider-buttons
+                        a.provider-button.mailjet.waves-effect.waves-darker.btn-large.col.s1.cyan.darken-4 
+                            img.mailjet-img(
+                                src="../public/img/mailjet.svg", 
+                                alt="")
+                            p.checks 
+                                label
+                                    input.mailjet-check.filled-in(
+                                        type='checkbox', 
+                                        checked='checked'
+                                    )
+                                    span.check-span              
+                        a.provider-button.mailgun.waves-effect.waves-darker.btn-large.col.s1.cyan.darken-4 
+                            img.mailgun-img(
+                                src="../public/img/mailgun.svg", 
+                                alt="")
+                            p.checks
+                                label
+                                    input.mailgun-check.filled-in(
+                                        type='checkbox'
+                                    )
+                                    span.check-span        
+                        a.provider-button.sendgrid.waves-effect.waves-darker.btn-large.col.s1.cyan.darken-4
+                            img.sendgrid-img(
+                                src="../public/img/sendgrid.svg", 
+                                alt=""
+                            ) 
+                            p.checks
+                                label
+                                    input.sendgrid-check.filled-in(
+                                        type='checkbox'
+                                    )
+                                    span.check-span

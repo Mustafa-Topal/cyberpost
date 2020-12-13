@@ -1,0 +1,312 @@
+.colum.provider-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.provider-button {
+    overflow: visible;
+    width: 90px;
+    height: 70px;
+}
+
+p.checks {
+    pointer-events: none;
+    position: absolute;
+    right: -30%;
+    bottom: 53%;
+}
+
+span.check-span::after  {
+    border: none !important;
+    background-color: #006064 !important;
+}
+
+.send-submit-button {
+    width: 100%;
+}
+
+img.mailjet-img {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 35px ;
+}
+
+img.mailgun-img {
+    position: absolute;
+    top: -20%;
+    left:  -3%;
+    padding-top: -100px;
+    height: 95px;
+}
+
+img.sendgrid-img {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    padding-left: 2px;
+    height: 15px ;
+}
+
+img.cyberpost-logo {
+    height: 63px;
+    padding-left: 20px;
+}
+
+img.cyberpost-logo-foot {
+    height: 33px;
+}
+
+a.nav-register {
+    padding-right: 20px;
+}
+
+ul.nav-ul {
+    padding-right: 20px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+.card-content{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.card-panel-dashboard {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.foot-container-down {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.foot-container-up {
+    padding-top: 10px;
+}
+.foot-link {
+    position: absolute;
+    right: 0;
+}
+
+footer.page-footer {
+    padding-top: 0px;
+}
+
+label.to-label {
+    font-size: 12px;
+    top: -10px;
+}
+label.bcc-label {
+    font-size: 12px;
+    top: -10px;
+}
+
+.provider-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5.body {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+.nav-dropdown {
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 70%;
+}
+.nav-dropdown:hover {
+    background-color: #37474f;
+}
+i.dropdown-icon {
+  font-weight: bold; 
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: rgb(206, 206, 206);
+}
+.input-field input[type=text]:focus + label {
+    color: #000 !important;
+}
+.input-field input[type=email]:focus + label {
+    color: #000 !important;
+}
+.material-icons {
+    color: rgb(206, 206, 206);
+}
+.register-button {
+    color: rgb(206, 206, 206 ) !important;
+}
+.login-button {
+    color: rgb(206, 206, 206) !important; 
+}
+.logout-button {
+    padding-right: 20px;
+    color: rgb(206, 206, 206) !important;
+}
+.dashboard-button {
+    padding-right: 20px;
+    font-size: 15px !important;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(206, 206, 206) !important;
+}
+.logout-button:hover {
+    color: #37474f !important;
+}
+.login-button:hover {
+    color: #37474f !important;
+} 
+.register-button:hover {
+    color: #37474f !important;
+}
+.input-field input:focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+.chips.focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+.chip:focus {
+    outline: none;
+    background-color:#546e7a;
+    color: #fff;
+}
+.public-button {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 44px;
+}
+.token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.token-title {
+    pointer-events: none;
+    user-select: none;
+    color: #2a9959;
+    padding-top: 10px;
+}
+a#token_text {
+    user-select: all;
+    color: #0b6a9c;
+    padding-bottom: 10px;
+}
+label {
+    pointer-events: none;
+}
+.html-label {
+    display: flex;
+    pointer-events: all;
+    justify-content: center;
+}
+.html-span {
+    padding-right: 50px;
+}
+span.html-span::after  {
+    border: none !important;
+    background-color: #006064 !important;
+}
+.to-name-input-field {
+    margin-top: 30px !important;
+ }
+ .to-input-field {
+    margin-bottom: -10px !important;
+}
+@media only screen and (max-width: 769px) {
+    img.cyberpost-logo {
+        padding-left: 0;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    img.cyberpost-logo {
+        height: 54px;
+        padding-left: 0;
+    }
+
+    .to-row {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .from-row {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .to-name-input-field {
+       width: 100% !important;
+       margin-top: 10px !important;
+    }
+    .to-input-field {
+        width: 100% !important;
+    }
+    .from-name-input-field {
+        width: 100% !important;
+        margin-bottom: 34px !important;
+    }
+    .from-input-field {
+        width: 100% !important;
+    }   
+    
+}
+@media only screen and (max-width: 475px) {
+    .footer-copyright{
+        overflow: visible !important ;
+    }
+    .created {
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 25%;
+        left: 0;
+    }
+}
+@media only screen and (max-width: 445px) {
+    .provider-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    a.provider-button {
+        margin-bottom: 20px;
+        position: relative;
+        width: 100%;
+    }
+    p.checks {
+        pointer-events: none;
+        position: absolute;
+        right: -10%;
+        bottom: 54%;
+
+    }
+    img.mailjet-img {
+        position: relative;
+    }
+    
+    img.mailgun-img {
+        position: relative;
+        margin-left: 10px;
+    }
+    
+    img.sendgrid-img {
+        position: relative;
+        margin-bottom: 20px;
+    }
+}

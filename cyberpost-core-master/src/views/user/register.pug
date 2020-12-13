@@ -1,0 +1,35 @@
+.container
+      .row
+        .col.s12
+          .card
+            .card-content.z-depth-3.blue-grey.darken-3.black-text.center-align 
+              h5.body REGISTER
+              form#register-form(
+                action='/api/register', 
+                method='post'
+              )
+                .row
+                  .input-field.col.s12
+                    input#first_name.validate(s
+                      type='text', 
+                      name='username', 
+                      required
+                    )
+                    label(for='username') Username
+                .row
+                  .input-field.col.s12
+                    input#password.validate(
+                      type='password', 
+                      name='password', 
+                      required
+                    )
+                    label(for='password') Password
+                .row
+                  .input-field.col.s12
+                    input#email.validate(type='email' name='email' required)
+                    label(for='email') Email    
+                .row.right-align
+                  button.btn.waves-effect.waves-light.z-depth-3.blue-grey.darken-1.public-button(
+                    type='submit', 
+                    name='action'
+                  ) Register

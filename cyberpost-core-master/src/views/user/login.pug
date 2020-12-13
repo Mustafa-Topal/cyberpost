@@ -1,0 +1,31 @@
+.container
+      .row
+        .col.s12
+          .card
+            .card-content.z-depth-3.blue-grey.darken-3.black-text.center-align
+              h5.body LOGIN
+              form#login-form(
+                action='/api/login', 
+                method='post'
+              )
+                .row
+                  .input-field.col.s12
+                    input#username.validate(
+                      type='text', 
+                      name='username', 
+                      required
+                    )
+                    label(for='username') Username
+                .row
+                  .input-field.col.s12
+                    input#password.validate(
+                      type='password', 
+                      name='password', 
+                      required
+                    )
+                    label(for='password') Password    
+                .row.right-align
+                  button.btn.waves-effect.waves-light.z-depth-3.blue-grey.darken-1.public-button(
+                    type='submit', 
+                    name='action'
+                  ) Log in
